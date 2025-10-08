@@ -10,6 +10,6 @@ while (cont <= 6) {
   cont++;
 }
 
-for (i = array.length - 1; i > 0; i--) {
+for (i = array.length - 1; i >= 0; i--) {
   alert("El elemento " + i + " toma el valor " + array[i]);
 }
