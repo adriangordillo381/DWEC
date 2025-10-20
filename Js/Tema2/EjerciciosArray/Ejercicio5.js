@@ -9,9 +9,12 @@ let nombre;
 let arraynombre = [];
 
 while (true) {
+  nombre = prompt("Introduce nombres");
   if (nombre != "") {
     arraynombre.push(nombre);
   } else {
     break;
   }
 }
+
+alert("El array es " + arraynombre.sort());
