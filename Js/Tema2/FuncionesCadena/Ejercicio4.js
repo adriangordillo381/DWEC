@@ -11,3 +11,7 @@ elem1#elem2#elem3”
 let anidado1 = ["anidado1", "anidado2", "anidado3"];
 let anidado2 = ["a1", "a2", "a3"];
 let matriz = [anidado1, anidado2];
+
+for (const elemento in matriz) {
+  alert(`El indice ${elemento}  contiene  ${matriz[elemento].join("#")}`);
+}
