@@ -3,3 +3,7 @@
 */
 
 let array = [1, 2, 3, 4, 5];
+
+while(array.length>0){
+    console.log(array.pop())
+}
