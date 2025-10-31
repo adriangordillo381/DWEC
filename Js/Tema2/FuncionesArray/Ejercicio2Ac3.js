@@ -42,16 +42,16 @@ function alergias() {
 }
 
 function modificar() {
-  let producto = prompt("Que producto quieres buscar")
+  let producto = prompt("Que producto quieres buscar");
 
-  if (array.includes(producto)){
-    let nuevo = prompt("Introduce nuevo nombre para " + producto)
-    let indice = array.indexOf(producto)
+  if (array.includes(producto)) {
+    let nuevo = prompt("Introduce nuevo nombre para " + producto);
+    let indice = array.indexOf(producto);
 
-    array[indice] = nuevo
+    array[indice] = nuevo;
 
-    alert(array)
-  }else{
-    console.log(`El producto ${producto} no existe`)
+    alert(array);
+  } else {
+    console.log(`El producto ${producto} no existe`);
   }
 }
