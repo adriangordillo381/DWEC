@@ -26,7 +26,7 @@ function MostrarFunciones() {
 que dibuje una línea con 3 asteriscos en la pantalla.
 */
 
-function DibujarLinea() {
+function DibujarLinea3() {
   return "***";
 }
 
@@ -40,10 +40,10 @@ function DibujarLinea() {
 
 function DibujarCuadrado3x3() {
   let rdo = "";
-  for (let i = 1; i <= 3; i++) {
-    rdo += DibujarLinea() + "\n";
-    alert(rdo);
+  for (let i = 0; i < 3; i++) {
+    rdo += DibujarLinea3() + "\n";
   }
+  alert(rdo);
 }
 
 /*
@@ -52,12 +52,12 @@ que dibuje una línea con X asteriscos (en la pantalla). La
 función tendrá un parámetro de entrada con el número de asteriscos a mostrar.
 
 */
-function Parametro() {
+function DibujarLinea() {
   let num = parseInt(prompt("Introduce un numero"));
-  DibujarLinea(num);
+  console.log(linea(num));
 }
 
-function DibujarLinea(numero) {
+function linea(numero) {
   let linea = "";
   for (let i = 0; i < numero; i++) {
     linea += "*";
@@ -74,12 +74,13 @@ pedirá al usuario el tamaño del cuadrado,
  y llamará a la función con ese dato
 */
 
-function DibujarCuadrado(num) {
-  let linea = "";
-  for (let i = 0; i < num; i++) {
-    linea += DibujarLinea(num);
-    linea += "\n";
+function DibujarCuadrado() {
+  let tamaño = parseInt(prompt("Introduce el tamaño"));
+  let lin = "";
+  for (let i = 0; i < tamaño; i++) {
+    lin += linea(tamaño) + "\n";
   }
+  console.log(lin);
 }
 
 /*
