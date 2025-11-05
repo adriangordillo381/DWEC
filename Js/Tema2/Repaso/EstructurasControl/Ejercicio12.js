@@ -12,9 +12,11 @@ let ancho = parseInt(prompt("introduce el ancho"))
 
 
 for (let i = 0; i<alto ; i++) {
-     
+     let  fila = ""
     for(let j=0;j<ancho;j++){
-        
+         fila += "*"
     }
-    console.log("*")
+    console.log(fila)
+     
 }
+   
