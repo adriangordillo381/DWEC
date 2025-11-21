@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Formulario de contacto</h2>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="obrasdestacadas.html">Obras destacadas</a></li>
+        <li><a href="artistas.html">artistas</a></li>
+        <li><a href="contacto.html">Formulario de contacto</a></li>
+      </ul>
+    </nav>
+
+    <form action="" method="post">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <label for="name">Nombre Completo</label>
+        <input
+          type="text"
+          id="name"
+          name="nombre"
+          pattern="[A-Za-zÁÉÍÓÚÑáéíóúñ ]{2-40}"
+          required
+        /><br /><br />
+        <label for="Email">Correo electrónico</label>
+        <input
+          type="email"
+          id="correo"
+          name="correo"
+          pattern="*[A-Za-z%$_.]*[@][A-Za-z]*[.][A-Za-zÁÉÍÓÚÑáéíóúñ]{2,3}"
+          required
+        /><br /><br />
+        <label for="telefono">Telefono</label>
+        <input
+          type="number"
+          id="telefono"
+          name="telefono"
+          pattern="[6789][0-9]{8}"
+          required
+        /><br /><br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Preferencias personales</legend><br>
+        <label for="Tematica de arte favorita">Tematica de arte favorita</label><br><br>
+        <select name="tematica" id="opciones">
+          <option value="">Elige una opcion</option>
+          <option value="Arte digital 3d">Arte digital 3D</option>
+          <option value="pixel">pixel Art</option>
+          <option value="Ilustracion">Ilustacion Digitales</option>
+          <option value="Arte regenerativo">Arte regenerativo</option>
+          <option value="arte interactivo">Arte interactivo</option>
+        </select>
+        <br />
+        <br />
+        <label for="preferencia de contacto">*Preferencia de contacto</label
+        ><br /><br />
+
+        <input type="radio" id="opcion1" name="radio1" value="email" />
+        <label for="opcion1">Correo electrónico</label><br />
+        <input type="radio" id="opcion2" name="radio1" value="email" />
+        <label for="opcion2">Telefono</label><br />
+        <input type="radio" id="opcion3" name="radio1" value="email" />
+        <label for="opcion3">Mensaje de Texto</label><br />
+        <input type="radio" id="opcion4" name="radio1" value="email" />
+        <label for="opcion4">Correo Postal</label><br><br>
+
+        <label for="Intereses artísticos">*Intereses artísticos</label
+        >
+        <p>Elige una o varios opciones</p>
+        <input type="checkbox" id="animacion" name="animacion" value="animar" />
+        <label for="animacion">Animacion</label><br />
+        <input type="checkbox" id="modelado" name="modelado" value="mode" />
+        <label for="modelado">Modelado 3D</label><br />
+        <input type="checkbox" id="arte" name="arte" value="arte" />
+        <label for="arte">Arte Generativo</label><br />
+        <input type="checkbox" id="realidad" name="realidad" value="real" />
+        <label for="realidad">Realidad Virtual</label><br />
+        <input type="checkbox" id="tecnologia" name="tecnologia" value="tec" />
+        <label for="tecnologia">Innovación tecnológica</label><br />
+        <input type="checkbox" id="belleza" name="belleza" value="belleza" />
+        <label for="belleza">Belleza</label><br /><br />
+        <label for="fecha">Fecha</label><br /><br />
+        <input type="date" id="date" name="fecha" />
+        <br />
+        <br />
+        <label for="comentario">Comentarios</label><br /><br />
+        <textarea
+          name="text"
+          id="comentario"
+          rows="4"
+          cols="40"
+          placeholder="Escribe un comentario"
+        >
+        </textarea>
+        <br /><br />
+        <input type="submit" value="Enviar" /><br /><br />
+        <input type="reset" value="Restablecer formulario" />
+      </fieldset>
+    </form>
+  </body>
+</html>

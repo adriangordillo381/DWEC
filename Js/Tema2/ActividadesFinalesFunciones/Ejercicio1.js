@@ -265,4 +265,121 @@ necesario para probarla.
         alert("No has introducido ningún nombre.");
       }
     }
+
+
+    /* 13.- Crea una función que oculte parte de una dirección de email. Por ejemplo, si se le pasa
+“1234567890@gmail.com”, devolverá “12345…@gmail.com”, es decir, sustituye la 2ª mitad del email
+(antes de la @) por “...”. Escribe también el código necesario para probarla.
+*/
+
+  
+ function OcultarCadena(){
+
+  let cadena = "1234567890@gmail.com";
+
+  let partes = cadena.split("@");
+
+  let usuario = partes[0];
+  let dominio = partes[1];
+
+  let mitad = Math.floor(usuario.length / 2);
+
+  let usuarioCorto = usuario.slice(0, mitad);
+
+  let resultado = `${usuarioCorto}...@${dominio}`;
+
+  alert(resultado);
+}
+
+/*
+14.- Define una función que sustituya los espacios en blanco por un guión y, además, convierta todo el
+texto en minúsculas. Escribe también el código necesario para probarla
+*/
+
+function IntroducirFrase() {
+  let frase = prompt("Introduce una frase")
+  let frasenueva = SustituirEspacios(frase)
+  alert(frasenueva)
     
+}
+
+
+function SustituirEspacios(frase) {
+
+  let fraseminus = frase.toLowercase()
+  alert(" ")
+
+  let fraseguion = frase.replaceAll(" ", "-")
+}
+
+
+/*
+15.- Escribe una función que reciba dos parámetros, string1 y string2, y que devuelva true si string1
+contiene a string2, o false en caso contrario
+*/
+
+function comprobarFrase() {
+ // console.log(contieneStrings("Mi perro se llama Juan","perro"))
+ let frase1= prompt("Introduce una frase")
+ let frase2= prompt("Introduce una frase")
+
+ alert(contieneStrings(frase1,frase2))
+
+
+  
+}
+
+function contieneStrings(string1,string2) {
+  
+  return string1.includes(string2)  //la funcion devuelve true o false solo no hace falta if/else
+
+}
+
+/*
+16.- Crea una función que genere un número aleatorio, entre dos valores dados. Utiliza esta función para
+simular el funcionamiento de un dado.
+*/
+
+function numDado() {
+
+  let num = Math.floor(Math.random()*(6-1+1))
+  alert(`El numero del dado es ${num}`)
+  
+}
+
+/*
+17.- Define una función que devuelva una cadena de texto con el día actual. Además, hay que pasarle el
+separador. Suponiendo que el separador es “-”, el formato de salida será “dd-mm-yyyy”
+*/
+
+function diaActual(separador){
+   let fecha = new Date()
+   let texto= "Hola soy Adrian"
+   let dia = fecha.getDate().toString().padStart(2,"0")
+   let mes = (fecha.getMonth() + 1).toString().padStart(2,"0")
+   let año = fecha.getFullYear()
+
+  let rdo= texto +  dia + separador + mes + separador + año
+  return rdo
+
+  }
+  function dia(){
+    alert(diaActual("-"))
+  }
+
+
+
+  /*
+  18.- En una empresa las facturas vencen a los 20 días. Crear una función que tendrá como parámetro una 
+fecha con el formato 'dd-mm-YYYY' y devolverá la fecha de vencimiento (con el mismo formato). Hay 
+que tener en cuenta que, si la fecha de vencimiento cae en fin de semana, habrá que mostrar la fecha del 
+viernes anterior.*/
+
+function fechaVencimiento(fecha) {
+  
+  let fecha = new Date()
+  
+
+
+  
+}
