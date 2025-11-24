@@ -200,7 +200,7 @@ const solucion = [
   1, // China
 ];
 function preguntaSimple(enunciado, respuesta, solucion) {
-  prompt;
+  prompt();
 }
 
 function trivial() {
