@@ -157,17 +157,28 @@ Array de puntos:
 */
 
 function votos() {
-    let puntos =[
+    let ciudadespuntos =[
 "Zafra-8puntos",
  "Mérida-23puntos", "Badajoz-4puntos", "Zafra-3puntos",
 "Almendralejo-12puntos", "Mérida-4puntos", "Badajoz-15puntos", "Zafra-2puntos",
 "Mérida-7puntos", "Zafra-11puntos", "Almendralejo-31puntos", "Aceuchal-3puntos",
 "Almendralejo-7puntos", "La Parra-17puntos", "Aceuchal-15puntos", "Zafra-6puntos"]
-let puntosnuevo = []
+let nuevo = []
 
-for (const elemento of puntos) {
-    let ciudad = puntos[elemento].split("-")
-    let
+for (const elemento of ciudadespuntos) {
+    let partes = elemento.split("-")
+    let ciudad = partes[0]
+    let puntosN = parseInt(partes[1]) 
+
+    if(nuevo[ciudad] == undefined){
+        nuevo[ciudad] = puntosN
+    }else{
+        nuevo[ciudad]+=puntos
+    }
+
+    for (const ciudades of nuevo) {
+        
+    }
 }
 
 }
