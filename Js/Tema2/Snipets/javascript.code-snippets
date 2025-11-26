@@ -28,5 +28,15 @@
     "prefix": "agbforof",
     "body": ["for (const $1 of $2){", "\t$3", "}"],
     "description": "for of de un array"
+  },
+
+  "random ":{
+    "scope": "javascript",
+    "prefix": "agbrandom",
+    "body": [
+      "let cantidadElementos= (max-min) +1",
+      "let aleatorio = Math.floor(Math.random() * (cantidadElementos) + inicio)"
+    ],
+    "description": "aleatorio"
   }
 }
