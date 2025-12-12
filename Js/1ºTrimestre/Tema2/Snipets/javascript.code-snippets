@@ -30,13 +30,17 @@
     "description": "for of de un array"
   },
 
-  "random ":{
+  "random ": {
     "scope": "javascript",
     "prefix": "agbrandom",
-    "body": [
-      "let cantidadElementos= (max-min) +1",
-      "let aleatorio = Math.floor(Math.random() * (cantidadElementos) + inicio)"
-    ],
-    "description": "aleatorio"
+    "body": ["let aleatorio = Math.floor(Math.random() * 10)+1"],
+    "description": "aleatorio del 1 al 10, solo vale si se inicia en 1"
+  },
+
+  "randooom1 ": {
+    "scope": "javascript",
+    "prefix": "agbrandom",
+    "body": ["let aleatorio = Math.floor(Math.random() * (30 -20 +1))+20"],
+    "description": "aleatorio del 20 al 30"
   }
 }
