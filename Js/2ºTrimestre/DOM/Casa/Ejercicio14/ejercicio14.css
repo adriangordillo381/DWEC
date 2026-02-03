@@ -1,0 +1,10 @@
+.producto { 
+        border: 1px solid #ccc; 
+        padding: 10px; 
+        margin: 10px; 
+        display: inline-block; 
+    } 
+ 
+    .producto.oculto { 
+        display: none; 
+    } 
